@@ -11,62 +11,20 @@ html {
 html, body, div, span,
 object, iframe, 
 h1, h2, h3, h4, h5, h6, p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
 img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
 ol,
 ul,
 li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
 details,
 figcaption,
-figure,
 footer,
 header,
 hgroup,
 menu,
 nav,
 section,
-summary,
-time,
-mark,
-audio,
-video {
+summary
+{
   margin: 0;
   padding: 0;
   border: 0;
@@ -86,15 +44,18 @@ body {
   font-size: 14px;
   font-family: "Work Sans", sans-serif;
   background-color: var(--lightPink);
-  background-image: url(/assets/images/background-pattern-mobile.svg);
+  background-image: url(/images/background-pattern-mobile.svg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+  
 
   @media screen and (min-width: 768px) {
-    background-image: url(/assets/images/background-pattern-desktop.svg);
+    background-image: url(/images/background-pattern-desktop.svg);
   }
 }
+
+
 
 summary {
   list-style-type: none;
