@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Useful resources
 
-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details - I used the <details> HTML element for creating a disclosure widget.
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details - I used the details> HTML element for creating a disclosure widget.
 
 ## Author
 

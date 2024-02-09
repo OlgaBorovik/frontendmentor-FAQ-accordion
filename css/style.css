@@ -44,17 +44,24 @@ body {
   font-size: 14px;
   font-family: "Work Sans", sans-serif;
   background-color: var(--lightPink);
-  background-image: url(/images/background-pattern-mobile.svg);
+  
+}
+
+section{
+  position: absolute;
+  top:0;
+  width: 100%;
+  margin: 0;
+background-image: url(/assets/images/background-pattern-mobile.svg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  
+
 
   @media screen and (min-width: 768px) {
-    background-image: url(/images/background-pattern-desktop.svg);
+    background-image: url(/assets/images/background-pattern-desktop.svg);
   }
 }
-
 
 
 summary {
@@ -108,11 +115,20 @@ summary {
   background-size: cover;
   margin-right: 24px;
 
-  @media (min-width: 768px) {
-    width: 40px;
-    height: 40px;
+}
 
-  }
+@media (min-width: 768px){
+  .heading::before {
+      content: " ";
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-image: url(/assets/images/icon-star.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 24px;
+  
+    }
 }
 
 
@@ -158,8 +174,6 @@ summary:focus {
 .hidden{
   display: none;
 }
-
-
 
 .details__text {
   line-height: 1.5;
