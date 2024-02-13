@@ -47,28 +47,13 @@ body {
   
 }
 
-section{
-  position: absolute;
-  top:0;
-  width: 100%;
-  margin: 0;
-background-image: url(/assets/images/background-pattern-mobile.svg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
-
-
-  @media screen and (min-width: 768px) {
-    background-image: url(/assets/images/background-pattern-desktop.svg);
-  }
-}
-
-
 summary {
   list-style-type: none;
   cursor: pointer;
   color: var(--darkPurple)
 }
+
+
 
 :root {
   --white: hsl(0, 0%, 100%);
@@ -78,20 +63,39 @@ summary {
   --accent: #ad28eb;
 }
 
-.container {
-  background-color: white;
-  max-width: 327px;
-  margin: 142px auto;
-  border-radius: 8px;
-  box-shadow: 0 32px 56px 0 rgba(80, 0, 118, 0.1);
-  padding: 24px;
+.faq{
+  position: relative;
+  
 
-  @media screen and (min-width: 768px) {
-    max-width: 600px;
-    padding: 40px;
-    margin: 167px auto;
-  }
 }
+
+.bg{
+  background-image: url(/assets/images/background-pattern-mobile.svg);
+  background-position: top; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 235px;
+  
+@media (min-width: 768px){
+  background-image: url(/assets/images/background-pattern-desktop.svg);
+height: 320px;
+  
+}
+
+}
+
+.faq-box{
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* margin-left: auto;
+  margin-right: auto; */
+  background-color: var(--white);
+  max-width: 325px;
+}
+
 
 .heading {
   font-weight: 700;
