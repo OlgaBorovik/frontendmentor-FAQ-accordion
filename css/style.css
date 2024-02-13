@@ -64,36 +64,31 @@ summary {
 }
 
 .faq{
-  position: relative;
   
-
-}
-
-.bg{
-  background-image: url(/assets/images/background-pattern-mobile.svg);
+  background-image: url(/assets/images/background-mobile.png);
   background-position: top; 
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 235px;
-  
+  width: 100%;
+padding-top: 142px;
+ 
 @media (min-width: 768px){
-  background-image: url(/assets/images/background-pattern-desktop.svg);
-height: 320px;
-  
+  background-image: url(/assets/images/background-desktop.png);
+  padding-top: 167px;
 }
-
-}
+} 
 
 .faq-box{
-  position: absolute; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* margin-left: auto;
-  margin-right: auto; */
+margin: auto;
   background-color: var(--white);
-  max-width: 325px;
+  box-shadow: 0 32px 56px 0 rgba(80, 0, 118, 0.1);
+  width: 325px;
+  border-radius: 8px;
+  padding: 24px;
+  @media (min-width: 768px) {
+      width: 600px;
+      padding: 40px;
+    }
 }
 
 
@@ -102,11 +97,12 @@ height: 320px;
   font-size: 32px;
   color: var(--darkPurple);
   margin-bottom: 24px;
+  
 
   @media (min-width: 768px) {
     font-size: 56px;
     margin-bottom: 32px;
-  }
+    }
 }
 
 .heading::before {
