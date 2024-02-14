@@ -64,17 +64,19 @@ summary {
 }
 
 .faq{
-  
   background-image: url(/assets/images/background-mobile.png);
   background-position: top; 
   background-size: contain;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
+  max-height: 235px;
 padding-top: 142px;
  
 @media (min-width: 768px){
   background-image: url(/assets/images/background-desktop.png);
   padding-top: 167px;
+  max-height: 320px;
 }
 } 
 
